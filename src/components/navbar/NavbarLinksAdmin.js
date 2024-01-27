@@ -19,7 +19,6 @@ import { SidebarResponsive } from 'components/sidebar/Sidebar';
 import PropTypes from 'prop-types';
 import React from 'react';
 // Assets
-import { FaEthereum } from 'react-icons/fa';
 import routes from 'routes.js';
 export default function HeaderLinks(props) {
 	const { secondary } = props;
