@@ -1,10 +1,10 @@
 
 import { Box, SimpleGrid } from "@chakra-ui/react";
-import ColumnsTable from "views/admin/dataTables/components/ColumnsTable";
+import LogTable from "views/admin/dataTables/components/LogTable";
 import {
   columnsDataColumns,
-} from "views/admin/dataTables/variables/columnsData";
-import tableDataColumns from "views/admin/dataTables/variables/tableDataColumns.json";
+} from "views/admin/default/variables/logColumns";
+import tableDataColumns from "views/admin/default/variables/logData.json";
 import React from "react";
 
 export default function Settings() {
@@ -13,9 +13,9 @@ export default function Settings() {
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
       <SimpleGrid
         mb='20px'
-        columns={{ sm: 1, md: 2 }}
+        columns={{ sm: 1, md: 1 }}
         spacing={{ base: "20px", xl: "20px" }}>
-        <ColumnsTable
+        <LogTable
           columnsData={columnsDataColumns}
           tableData={tableDataColumns}
         />
