@@ -12,8 +12,6 @@ import {
 // Admin Imports
 import MainDashboard from "views/admin/default";
 import Graph from "views/admin/graph";
-import DataTables from "views/admin/dataTables";
-import SqliteView from "views/admin/sqlite";
 
 const routes = [
   {
@@ -29,20 +27,6 @@ const routes = [
     path: "/graph",
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: Graph,
-  },
-  {
-    name: "Data Tables",
-    layout: "/admin",
-    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
-    path: "/data-tables",
-    component: DataTables,
-  },
-  {
-    name: "SQLite",
-    layout: "/admin",
-    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
-    path: "/sqlite",
-    component: SqliteView,
   },
 ];
 

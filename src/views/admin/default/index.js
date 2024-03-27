@@ -3,13 +3,6 @@ import {
 	Box,
 	SimpleGrid,
 } from "@chakra-ui/react";
-// Assets
-// Custom components
-import ComplexTable from "views/admin/default/components/ComplexTable";
-import {
-	columnsDataComplex,
-} from "views/admin/default/variables/columnsData";
-import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
 import AppInformation from "views/admin/default/components/AppInformation"
 
 class MainReport extends React.Component {
@@ -31,10 +24,6 @@ class MainReport extends React.Component {
 					<AppInformation
 						minH='365px'
 						pe='20px'
-					/>
-					<ComplexTable
-						columnsData={columnsDataComplex}
-						tableData={tableDataComplex}
 					/>
 				</SimpleGrid>
 			</Box>

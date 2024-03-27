@@ -37,7 +37,7 @@ import {
 	TableCaption,
 	TableContainer,
 } from '@chakra-ui/react'
-import DetailTable from "views/admin/dataTables/components/DetailTable";
+import DetailTable from "components/table/DetailTable";
 
 class GraphWrapperComponent extends React.Component {
 	constructor(props) {
