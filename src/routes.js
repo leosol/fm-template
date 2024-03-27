@@ -11,16 +11,24 @@ import {
 
 // Admin Imports
 import MainDashboard from "views/admin/default";
+import Graph from "views/admin/graph";
 import DataTables from "views/admin/dataTables";
 import SqliteView from "views/admin/sqlite";
 
 const routes = [
   {
-    name: "Main Dashboard",
+    name: "Project",
     layout: "/admin",
     path: "/default",
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: MainDashboard,
+  },
+  {
+    name: "Graph",
+    layout: "/admin",
+    path: "/graph",
+    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+    component: Graph,
   },
   {
     name: "Data Tables",
